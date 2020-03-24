@@ -1,0 +1,273 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-24 19:39+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: BP 2019/20 Gruppe 45\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: __init__.py:11
+#, fuzzy
+#| msgid "Landing Page"
+msgid "Pretix Landing Pages"
+msgstr "Pretix Landing Pages"
+
+#: __init__.py:13
+msgid "Enables users to create custom landingpages for organizers"
+msgstr "Erlaubt das Erstellen von individuellen Landing Pages für Veranstalter"
+
+#: forms.py:9
+msgid ""
+"Filenames may only contain latin letters, underscores, dots, hyphens and "
+"numbers"
+msgstr ""
+"Dateinamen dürfen nur aus Buchstaben, Unterstrichen, Punkten, Bindestrichen "
+"und Nummern bestehen"
+
+#: forms.py:19
+msgid "Use custom landing page"
+msgstr "Individuelle Landing Page benutzen"
+
+#: forms.py:25 forms.py:47
+msgid ""
+"The main HTML page needs to be named \"index.html\". Filenames may only "
+"contain latin letters, underscores, dots, hyphens and numbers."
+msgstr ""
+"Die Haupt-HTML muss \"index.html\" heißen. Dateinamen dürfen nur aus "
+"Buchstaben, Unterstrichen, Punkten, Bindestrichen und Nummern bestehen."
+
+#: forms.py:29
+msgid "File upload:"
+msgstr "Datei-Upload:"
+
+#: forms.py:33
+msgid "Override"
+msgstr "Überschreiben"
+
+#: forms.py:35
+msgid "If selected, uploaded files that already exist will be overwritten"
+msgstr "Wenn ausgewählt werden bereits existierende Dateien überschrieben"
+
+#: forms.py:41
+msgid "<strong>Use uploaded starting page</strong>"
+msgstr "<strong>Hochgeladene Startseite nutzen</strong>"
+
+#: forms.py:46
+msgid "Files:"
+msgstr "Dateien:"
+
+#: forms.py:56
+msgid "<strong>Enable redirect</strong>"
+msgstr "<strong>Weiterleitung aktivieren</strong>"
+
+#: forms.py:60
+msgid "Enter redirect URL:"
+msgstr "Weiterleitungs-URL angeben:"
+
+#: signals.py:28
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:29
+msgid "Landing Page"
+msgstr "Landing Page"
+
+#: signals.py:41
+msgid "Starting Page Settings"
+msgstr "Startseiteneinstellungen"
+
+#: signals.py:62
+msgid "Enable landing page plugin for organizer..."
+msgstr "Aktiviere Landing Page Plugin für Veranstalter..."
+
+#: signals.py:65
+msgid "Enable landing page plugin for all organizers"
+msgstr "Aktiviere Landing Page Plugin für alle Veranstalter"
+
+#: signals.py:67
+msgid "If enabled, this option overrides the selection above."
+msgstr "Wenn diese Option aktiviert wurde, überschreibt sie die obige Auswahl."
+
+#: templates/pretixplugins/pretix_landing_pages/calendar.html:15
+msgid "iCal"
+msgstr "iCal"
+
+#: templates/pretixplugins/pretix_landing_pages/calendar.html:30
+msgid "Go"
+msgstr "Los!"
+
+#: templates/pretixplugins/pretix_landing_pages/calendar.html:49
+msgid "Note that the events in this view are in different timezones."
+msgstr ""
+"Achtung: Die angezeigten Veranstaltungen liegen in unterschiedlichen "
+"Zeitzonen."
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:7
+msgid "Name"
+msgstr "Name"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:8
+msgid "Date"
+msgstr "Datum"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:9
+msgid "Status"
+msgstr "Status"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:24
+msgid "Event series"
+msgstr "Veranstaltungsreihe"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:27
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:36
+msgid "Book now"
+msgstr "Jetzt buchen"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:29
+msgid "Waiting list"
+msgstr "Warteliste"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:31
+msgid "Reserved"
+msgstr "Reserviert"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:33
+msgid "Sold out"
+msgstr "Ausverkauft"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:38
+msgid "Sale over"
+msgstr "Verkauf vorüber"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:41
+#, python-format
+msgid "Sale starts %(date)s"
+msgstr "Verkauf startet %(date)s"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:46
+msgid "Not yet on sale"
+msgstr "Noch nicht im Verkauf"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:51
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:52
+msgid "Buy tickets"
+msgstr "Tickets kaufen"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:53
+msgid "More info"
+msgstr "Mehr Infos"
+
+#: templates/pretixplugins/pretix_landing_pages/event_list.html:61
+msgid "No public upcoming events found."
+msgstr "Keine öffentlichen Veranstaltungen geplant."
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:9
+msgid ""
+" Settings applied. Files have not been saved because there is one or more "
+"duplicates.\n"
+"          To override duplicates please select option \"Override\" "
+msgstr ""
+" Einstellungen übernommen. Dateien wurden nicht gespeichert, da ein oder "
+"mehr Duplikate existieren.\n"
+"          Zum Überschreiben, bitte die Option \"Überschreiben\" auswählen"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:15
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:14
+msgid "Settings applied and files saved!"
+msgstr "Einstellungen übernommen und Dateien gespeichert!"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:17
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:16
+msgid "Settings applied!"
+msgstr "Einstellungen übernommen!"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:24
+msgid "Unable to apply settings, please check your selection and try again!"
+msgstr ""
+"Einstellungen konnten nicht übernommen werden, bitte überprüfen Sie die "
+"Auswahl und versuchen es erneut!"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:34
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:24
+msgid "Files"
+msgstr "Dateien"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:38
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:28
+msgid "Existing Files"
+msgstr "Existierende Dateien"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:39
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:29
+msgid "Type"
+msgstr "Typ"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:40
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:30
+msgid "Options"
+msgstr "Optionen"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:55
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:45
+msgid "Delete"
+msgstr "Löschen"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:72
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:77
+msgid "File Upload"
+msgstr "Datei-Upload"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:83
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:74
+msgid "Delete All"
+msgstr "Alle Dateien löschen"
+
+#: templates/pretixplugins/pretix_landing_pages/landingpage_upload.html:85
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:76
+msgid "Save"
+msgstr "Speichern"
+
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:9
+msgid "Settings could not be applied!"
+msgstr "Einstellungen konnten nicht übernommen werden!"
+
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:22
+msgid "Starting Page"
+msgstr "Startseite"
+
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:64
+msgid "Custom Starting Page"
+msgstr "Individuelle Startseite"
+
+#: templates/pretixplugins/pretix_landing_pages/startingpage_settings.html:69
+msgid "Redirect"
+msgstr "Weiterleitung"
+
+#: views.py:55
+msgid "The selected organizer was not found."
+msgstr "Der ausgewählte Veranstalter wurde nicht gefunden."
+
+#: views.py:111 views.py:116
+msgid "This page is unavailable for the selected organizer"
+msgstr "Diese Seite ist für den ausgewählten Veranstalter nicht verfügbar"
+
+#: views.py:223 views.py:253 views.py:431 views.py:460
+msgid "Successfully deleted."
+msgstr "Erfolgreich gelöscht."
+
+#: views.py:225 views.py:255 views.py:433 views.py:462
+msgid "Deletion failed."
+msgstr "Löschen fehlgeschlagen."
+
+#~ msgid "Pretix plugin that allows to create landing pages for events"
+#~ msgstr ""
+#~ "Pretix-Plugin, welches das Erstellen von individuellen Landingpages und "
+#~ "Startseiten ermöglicht"
+
+#~ msgid "Landing Page Plugin"
+#~ msgstr "Landing Page Plugin"

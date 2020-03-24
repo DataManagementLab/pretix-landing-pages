@@ -1,0 +1,93 @@
+{% extends "pretixcontrol/organizers/base.html" %}
+{% load i18n %}
+{% load bootstrap3 %}
+{% block content %}
+
+{% if saved and not failed%}
+  {% if duplicated %}
+      <div class="alert alert-warning">
+        <p>{% blocktrans %} Settings applied. Files have not been saved because there is one or more duplicates.
+          To override duplicates please select option "Override" {% endblocktrans %}</p>
+        </div>
+    {% else%}
+      <div class="alert alert-success">
+      {% if uploaded %}
+        <p>{% trans "Settings applied and files saved!" %}</p>
+      {% else%}
+        <p>{% trans "Settings applied!" %}</p>
+      {% endif %}
+    </div>
+    {% endif %}
+{% endif %}
+    {% if failed %}
+        <div class="alert alert-warning">
+        <p>{% trans "Unable to apply settings, please check your selection and try again!" %}</p>
+        </div>
+    {% endif %}
+
+
+<h1>{% trans "Landing Page" %}</h1>
+  <div class="row">
+    <div class="col-xs-12 {% if page %}col-lg-10{% endif %}">
+
+      <fieldset>
+        <legend>{% trans "Files" %}</legend>
+        <table class="table table-condensed table-hover">
+          <thead>
+            <tr>
+              <th>{% trans "Existing Files" %}</th>
+              <th>{% trans "Type" %}</th>
+              <th>{% trans "Options" %}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for inf in file_information %}
+              <tr>
+                <td>
+                    {{inf.0}}
+                </td>
+                <td>
+                    {{inf.1}}
+                </td>
+                <td>
+                    <form method="POST" action="{% url 'plugins:pretix_landing_pages:delete_organizer_file' organizer=organizer.slug filename=inf.2 %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger btn-sm">{% trans "Delete" %}</button>
+                    </form>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </fieldset>
+
+      <form id="delete_all" method="POST" action="{% url 'plugins:pretix_landing_pages:delete_all_organizer_files' organizer=organizer.slug %}">
+      {% csrf_token %}
+      </form>
+
+      <form method ='POST' enctype="multipart/form-data" class="form-horizontal">
+        {% csrf_token %}
+
+      <fieldset>
+        <legend>{% trans "Settings" %}</legend>
+        {% bootstrap_form form layout="horizontal"%}
+      </fieldset>
+
+      <fieldset>
+        <legend>{% trans "File Upload" %}</legend>
+        {% bootstrap_form file_form layout="horizontal" %}
+      </fieldset>
+
+
+      <div class="form-group submit-group">
+        <button form="delete_all" type="submit" class="btn btn-danger btn-lg">{% trans "Delete All" %}</button>
+        <button type="submit" class="btn btn-primary btn-lg">
+          {% trans "Save" %}
+        </button>
+      </div>
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,37 @@
+# https://hub.docker.com/r/library/python/
+image: python:3.8-buster # Python 3.8 on Debian Buster
+
+# Change pip's cache directory to be inside the project directory since we can
+# only cache local items.
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+# Pip's cache doesn't store the python packages
+# https://pip.pypa.io/en/stable/reference/pip_install/#caching
+#
+# If you want to also cache the installed packages, you have to install
+# them in a virtualenv and cache it as well.
+cache:
+  paths:
+    - .cache/pip
+    - env/
+
+before_script:
+  - python3 -V  # Print out python version for debugging
+  - python3 -m venv env
+  - source env/bin/activate
+  - pip install -U pip wheel setuptools
+
+style:
+  script:
+    - pip install flake8 isort
+    - flake8 ./pretix_landing_pages
+    - isort -c -rc -df ./pretix_landing_pages
+
+test:
+  script:
+    - pip install pretix
+    - pip install pytest pytest-django pytest-cov
+    - python setup.py install
+    - python -m pretix check pretix_landing_pages
+    - pytest --cov=pretix_landing_pages --cov-branch
