@@ -1,7 +1,6 @@
 # Everything you need to know
 
-[![pipeline status](https://git.rwth-aachen.de/bp45/pretix-landing-page-plugin/badges/master/pipeline.svg)](https://git.rwth-aachen.de/bp45/pretix-landing-page-plugin/commits/master)
-[![coverage report](https://git.rwth-aachen.de/bp45/pretix-landing-page-plugin/badges/master/coverage.svg)](https://git.rwth-aachen.de/bp45/pretix-landing-page-plugin/commits/master)
+![CI](https://github.com/DataManagementLab/pretix-landing-pages/workflows/CI/badge.svg)
 
 This plugin allows you to upload custom pages using the [Django template language](https://docs.djangoproject.com/en/3.0/ref/templates/language/) (and extra files like stylesheets etc.) for the Pretix starting page or individual organizer pages.
 
