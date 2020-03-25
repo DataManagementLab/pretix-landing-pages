@@ -82,8 +82,8 @@ You will land on the following page.
 
 Example for a landingpage:  
 ```
-{% load load_path %}
 {% extends "pretixpresale/base.html" %}
+{% load load_path %}
 
 <html>
 <head>  
