@@ -8,7 +8,18 @@ This plugin allows you to upload custom pages using the [Django template languag
 Getting started in Pretix [Pretix Userguide](https://docs.pretix.eu/en/latest/user/index.html)
 ___
 ## Table of contents
-[[_TOC_]]
+* [1. Usage](#1-usage)
+    + [1.1. Roles and Rights](#11-roles-and-rights)
+    + [1.2. Starting Page](#12-starting-page)
+    + [1.3. Landing Page for Organizers](#13-landing-page-for-organizers)
+    + [1.4. Additional Files](#14-additional-files)
+    + [1.5. Event List for Organizer](#15-event-list-for-organizer)
+    + [1.6. Calendar for Organizer](#16-calendar-for-organizer)
+* [2. Administration](#2-administration)
+    + [2.1. Installation](#21-installation)
+    + [2.2. Plugin Activation](#22-plugin-activation)
+* [3. Development Setup](#3-development-setup)
+* [4. Terminology](#4-terminology)
 
 ## 1. Usage
 
