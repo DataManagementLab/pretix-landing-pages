@@ -68,7 +68,7 @@ It is not possible to activate the custom starting page and a redirect at the sa
 ### 1.3. Landing Page for Organizers
 To upload an organizer specific landingpage, go to your organizer's control page.  
 Then select the navigation item `Landingpage`.   
-You can now upload your `index.html` and additional files. To make your custom landingpage visible select the `Enable Plugin` button.
+You can now upload your `index.html` and additional files. To make your custom landingpage visible select the `Use custom landing page` button.
 
 <img src="Screenshots/LandingPageSettings.png">
 
