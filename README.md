@@ -19,6 +19,7 @@ ___
     + [2.2. Plugin Activation](#22-plugin-activation)
 * [3. Development Setup](#3-development-setup)
 * [4. Terminology](#4-terminology)
+* [5. License](#5-license)
 
 ## 1. Usage
 
@@ -220,4 +221,8 @@ The root page of a pretix instance (can only be changed by the admin in admin mo
 
 Here are some other [Pretix-Terminology](https://docs.pretix.eu/en/latest/development/concepts.html)
 
+## 5. License
 
+Copyright 2019 - 2020, Gruppe 45 Bachelorpraktikum 2019/2020
+
+Released under the terms of the Apache License 2.0
